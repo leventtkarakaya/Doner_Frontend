@@ -18,3 +18,114 @@
   object-fit: contain;
   object-position: center;
 }
+
+.containerAbout {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 20px 50px;
+}
+.containerAbout > h3 {
+  text-align: center;
+  font-size: xx-large;
+  font-family: "Google", sans-serif;
+  font-weight: 500;
+  color: #ed1d24;
+}
+.containerAbout > .containerAbout_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  gap: 50px;
+}
+.containerAbout > .containerAbout_1 > div > p {
+  text-align: center;
+  font-size: larger;
+  font-weight: 600;
+  font-variant: normal;
+  line-height: 2.2;
+  font-family: "Google", sans-serif;
+}
+
+.containerAbout > .containerAbout_2 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.containerAbout > .containerAbout_2 > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.containerAbout > .containerAbout_2 > div > p {
+  color: #ed1d24;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Google", sans-serif;
+  text-transform: uppercase;
+}
+
+.containerAbout > .containerAbout_3 {
+  padding: 20px 30px;
+}
+
+.containerAbout > .containerAbout_3 > nav {
+  display: flex;
+}
+.containerAbout > .containerAbout_3 > .containerWrapper {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.containerAbout > .containerAbout_3 > .containerWrapper > ul > h3 {
+  color: #ed1d24;
+}
+.containerAbout > .containerAbout_3 > .containerWrapper > ul > li > a {
+  text-decoration: none;
+}
+.containerAbout
+  > .containerAbout_3
+  > .containerWrapper
+  > .containerWrapper_text {
+  display: flex;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 250px;
+  height: 255px;
+  background-color: #ed1d24;
+}
+
+.containerAbout
+  > .containerAbout_3
+  > .containerWrapper
+  > .containerWrapper_text
+  > p {
+  line-height: 1.9;
+  font-family: "Google", sans-serif;
+  font-size: large;
+  font-weight: 500;
+  color: white;
+  word-spacing: 10px;
+  white-space: wrap;
+}
+#ulparagraf {
+  color: #ed1d24;
+  word-spacing: 2px;
+}
+.containerCorporatePartner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #dededede;
+}

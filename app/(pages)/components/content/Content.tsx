@@ -19,8 +19,8 @@ export default function Content() {
     event.target.pauseVideo();
   };
   const opts: YouTubeProps["opts"] = {
-    height: "390",
-    width: "640",
+    height: "250",
+    width: "464",
     playerVars: {
       autoplay: 1,
     },
@@ -137,20 +137,20 @@ export default function Content() {
         </Swiper>
       </div>
       {/* Kurumsal */}
-      <div>
+      <div className={style.containerCorporate}>
         <div>
-          <div>
+          <div className={style.containerAbout}>
             {/* Content Header */}
             <h3>
               Bazı lezzetlerin bıraktığı izler her zaman hatırlanır ve özel
               yerini daima muhafaza eder.
             </h3>
             {/* Contnet Tanıtım */}
-            <div>
+            <div className={style.containerAbout_1}>
               <div>
                 <Image
                   src={"/images/content/ContentImage_1.png"}
-                  width={200}
+                  width={400}
                   height={200}
                   alt="Agababa Döner"
                 />
@@ -160,7 +160,7 @@ export default function Content() {
               <div>
                 <Image
                   src={"/images/content/ContentImage_2.png"}
-                  width={200}
+                  width={400}
                   height={200}
                   alt="Agababa Döner"
                 />
@@ -170,7 +170,7 @@ export default function Content() {
               <div>
                 <Image
                   src={"/images/content/ContentImage_3.png"}
-                  width={200}
+                  width={400}
                   height={200}
                   alt="Agababa Döner"
                 />
@@ -179,13 +179,13 @@ export default function Content() {
               </div>
             </div>
             {/* Content Tanıtım_2 */}
-            <div>
+            <div className={style.containerAbout_2}>
               <div>
                 <Image
                   src={"/images/content/calendar.png"}
                   alt="tarih"
-                  width={200}
-                  height={200}
+                  width={100}
+                  height={100}
                 />
                 <p>Günün Menüsü</p>
               </div>
@@ -193,84 +193,93 @@ export default function Content() {
                 <Image
                   src={"/images/content/photo-camera.png"}
                   alt="tarih"
-                  width={200}
-                  height={200}
+                  width={100}
+                  height={100}
                 />
-                <p>Günün Menüsü</p>
+                <p>Fotoğraflar</p>
               </div>
               <div>
                 <Image
                   src={"/images/content/list.png"}
                   alt="tarih"
-                  width={200}
-                  height={200}
+                  width={100}
+                  height={100}
                 />
-                <p>Günün Menüsü</p>
+                <p>Basında Biz</p>
               </div>
               <div>
                 <Image
                   src={"/images/content/book.png"}
                   alt="tarih"
-                  width={200}
-                  height={200}
+                  width={100}
+                  height={100}
                 />
-                <p>Günün Menüsü</p>
+                <p>Görüşleriniz</p>
               </div>
               <div>
                 <Image
                   src={"/images/content/speech-bubble.png"}
                   alt="tarih"
-                  width={200}
-                  height={200}
+                  width={100}
+                  height={100}
                 />
-                <p>Günün Menüsü</p>
+                <p>Bizi Yorumlayınız</p>
               </div>
             </div>
             {/* Content Tanımtım_3 */}
-            <div>
-              <nav>
+            <div className={style.containerAbout_3}>
+              <nav className={style.containerWrapper}>
                 <ul>
+                  <h3>HABERLER & DUYURULAR</h3>
                   <li>
                     <Link href={"#"}>
-                      <p>İftar tatlısı denince Ağababa Kadayıf akla gelir</p>
+                      <p id={style.ulparagraf}>
+                        İftar tatlısı denince Ağababa Kadayıf akla gelir
+                      </p>
                     </Link>
                   </li>
                   <li>
                     <Link href={"#"}>
-                      <p>İstanbul Anadolu yakası en iyi iftar mekanı</p>
+                      <p id={style.ulparagraf}>
+                        İstanbul Anadolu yakası en iyi iftar mekanı
+                      </p>
                     </Link>
                   </li>
                   <li>
                     <Link href={"#"}>
-                      <p>Ramazan ayına özel toplu iftar yemeği için Polesan</p>
+                      <p id={style.ulparagraf}>
+                        Ramazan ayına özel toplu iftar yemeği için Polesan
+                      </p>
                     </Link>
                   </li>
                   <li>
                     <Link href={"#"}>
-                      <p>
+                      <p id={style.ulparagraf}>
                         İstanbul 2018 iftar yapılacak en iyi dönerci; Ağababa
                       </p>
                     </Link>
                   </li>
                   <li>
                     <Link href={"#"}>
-                      <p>İstanbul’da en iyi dönerin adresi; Ağababa Döner</p>
+                      <p id={style.ulparagraf}>
+                        İstanbul’da en iyi dönerin adresi; Ağababa Döner
+                      </p>
                     </Link>
                   </li>
                 </ul>
+                <div className={style.containerWrapper_text}>
+                  <Image
+                    src={"/images/content/bulb.png"}
+                    alt="ampul"
+                    width={25}
+                    height={25}
+                  />
+                  <p>
+                    Ağababa'nın Sosyal Medya Takipçilerin Kazanıyor. Her Hafta 2
+                    şanslı Çiftimizi Restoranımızda Ağırlıyoruz
+                  </p>
+                </div>
                 <div>
-                  <div>
-                    <Image
-                      src={"/images/content/bulb.png"}
-                      alt="ampul"
-                      width={25}
-                      height={25}
-                    />
-                    <p>
-                      Ağababa'nın Sosyal Medya Takipçilerin Kazanıyor. Her Hafta
-                      2 şanslı Çiftimizi Restoranımızda Ağırlıyoruz
-                    </p>
-                  </div>
                   <YouTube
                     videoId={"iubQDeZXh_0"}
                     opts={opts}
@@ -280,6 +289,62 @@ export default function Content() {
                 </div>
               </nav>
             </div>
+          </div>
+        </div>
+      </div>
+      {/* Kurumsal Ortak */}
+      <div className={style.containerCorporatePartner}>
+        <div>
+          <Image
+            src="/images/content/down-arrow.png"
+            alt="Döner"
+            width={50}
+            height={50}
+          />
+          <p>Ortak Kuruluşlarımız</p>
+          <div>
+            <Image
+              src={"/images/content/CorporatePartner_1.jpg"}
+              alt="Döner"
+              width={150}
+              height={150}
+            />
+            <Image
+              src={"/images/content/CorporatePartner_2.jpg"}
+              alt="Döner"
+              width={150}
+              height={150}
+            />
+            <Image
+              src={"/images/content/CorporatePartner_3.jpg"}
+              alt="Döner"
+              width={150}
+              height={150}
+            />
+            <Image
+              src={"/images/content/CorporatePartner_4.jpg"}
+              alt="Döner"
+              width={150}
+              height={150}
+            />
+            <Image
+              src={"/images/content/CorporatePartner_5.jpg"}
+              alt="Döner"
+              width={150}
+              height={150}
+            />
+            <Image
+              src={"/images/content/CorporatePartner_6.png"}
+              alt="Döner"
+              width={150}
+              height={150}
+            />
+          </div>
+          <div>
+            <p>
+              Ağababa Döner; gelen her misafirine, ait olma duygusu yaşatan ve
+              zamanı kuşatıveren farklı bir mekan...
+            </p>
           </div>
         </div>
       </div>
