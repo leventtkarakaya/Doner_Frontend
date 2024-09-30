@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React from "react";
 import Image from "next/image";
 /* Swiper import Start*/
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -13,6 +13,7 @@ import "swiper/css/pagination";
 import style from "./Content.module.css";
 /* Css import */
 import Link from "next/link";
+/* Youtube packet */
 import YouTube, { YouTubeProps } from "react-youtube";
 export default function Content() {
   const onPlayerReady: YouTubeProps["onReady"] = (event) => {
@@ -25,6 +26,7 @@ export default function Content() {
       autoplay: 1,
     },
   };
+  /* Youtube packet */
   return (
     <>
       <div className={style.container}>
@@ -175,7 +177,7 @@ export default function Content() {
                   alt="Agababa Döner"
                 />
                 <p>Ağababa Döner</p>
-                <p>Tanıtım Filmi</p>
+                <p>Tanıtım Filmi izlemek istermisiniz ?</p>
               </div>
             </div>
             {/* Content Tanıtım_2 */}
@@ -285,6 +287,7 @@ export default function Content() {
                     opts={opts}
                     onReady={onPlayerReady}
                     loading={true}
+                    id={style.Youtube}
                   />
                 </div>
               </nav>
@@ -294,53 +297,67 @@ export default function Content() {
       </div>
       {/* Kurumsal Ortak */}
       <div className={style.containerCorporatePartner}>
-        <div>
-          <Image
-            src="/images/content/down-arrow.png"
-            alt="Döner"
-            width={50}
-            height={50}
-          />
-          <p>Ortak Kuruluşlarımız</p>
-          <div>
+        <div className={style.containerCorporatePartnerWrapper}>
+          <div className={style.wrapper_1}>
             <Image
-              src={"/images/content/CorporatePartner_1.jpg"}
+              src="/images/content/down-arrow.png"
               alt="Döner"
-              width={150}
-              height={150}
+              width={50}
+              height={50}
             />
-            <Image
-              src={"/images/content/CorporatePartner_2.jpg"}
-              alt="Döner"
-              width={150}
-              height={150}
-            />
-            <Image
-              src={"/images/content/CorporatePartner_3.jpg"}
-              alt="Döner"
-              width={150}
-              height={150}
-            />
-            <Image
-              src={"/images/content/CorporatePartner_4.jpg"}
-              alt="Döner"
-              width={150}
-              height={150}
-            />
-            <Image
-              src={"/images/content/CorporatePartner_5.jpg"}
-              alt="Döner"
-              width={150}
-              height={150}
-            />
-            <Image
-              src={"/images/content/CorporatePartner_6.png"}
-              alt="Döner"
-              width={150}
-              height={150}
-            />
+            <p>Ortak Kuruluşlarımız</p>
           </div>
-          <div>
+          <div className={style.wrapper_2}>
+            <Link href={"/"}>
+              <Image
+                src={"/images/content/CorporatePartner_1.jpg"}
+                alt="Döner"
+                width={150}
+                height={150}
+              />
+            </Link>
+            <Link href={"/"}>
+              <Image
+                src={"/images/content/CorporatePartner_2.jpg"}
+                alt="Döner"
+                width={150}
+                height={150}
+              />
+            </Link>
+            <Link href={"/"}>
+              <Image
+                src={"/images/content/CorporatePartner_3.jpg"}
+                alt="Döner"
+                width={150}
+                height={150}
+              />
+            </Link>
+            <Link href={"/"}>
+              <Image
+                src={"/images/content/CorporatePartner_4.jpg"}
+                alt="Döner"
+                width={150}
+                height={150}
+              />
+            </Link>
+            <Link href={"/"}>
+              <Image
+                src={"/images/content/CorporatePartner_5.jpg"}
+                alt="Döner"
+                width={150}
+                height={150}
+              />
+            </Link>
+            <Link href={"/"}>
+              <Image
+                src={"/images/content/CorporatePartner_6.png"}
+                alt="Döner"
+                width={150}
+                height={150}
+              />
+            </Link>
+          </div>
+          <div className={style.wrapper_3}>
             <p>
               Ağababa Döner; gelen her misafirine, ait olma duygusu yaşatan ve
               zamanı kuşatıveren farklı bir mekan...

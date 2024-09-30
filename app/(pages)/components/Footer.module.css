@@ -1,0 +1,125 @@
+.container {
+  background-color: red;
+  color: white;
+  width: 100%;
+}
+
+.container > .containerWrapper {
+  padding: 100px;
+}
+
+.container > .containerWrapper > .containerWrapperContent {
+  display: flex;
+  gap: 20px;
+}
+.container > .containerWrapper > .containerWrapperContent > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 50%;
+}
+.container > .containerWrapper > .containerWrapperContent > ul > li {
+  list-style: none;
+  background-color: #d51010;
+  padding: 5px;
+}
+.container > .containerWrapper > .containerWrapperContent > ul > li > a {
+  text-decoration: none;
+  padding: 5px 10px;
+}
+.container
+  > .containerWrapper
+  > .containerWrapperContent
+  > ul
+  > li
+  > a:visited {
+  color: white;
+}
+
+.container > .containerWrapper .containerWrapperContent > .description {
+  width: 50%;
+}
+.container > .containerWrapper .containerWrapperContent > .mobileLinks {
+  width: 50%;
+}
+.container > .containerWrapper .containerWrapperContent > .locations {
+  width: 50%;
+}
+
+#descriptionTextYellow {
+  color: yellow;
+  font-weight: 600;
+  font-family: sans-serif;
+  font-size: large;
+}
+
+#hr {
+  border: 1px solid rebeccapurple;
+}
+#descriptionHeader {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: large;
+}
+
+#descriptionPaylasin {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: white;
+}
+
+#descriptionParagraf {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: large;
+}
+
+#altParagrafs {
+  font-family: sans-serif;
+  font-size: xx-small;
+}
+.mobileLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+#mobileLinksHeader {
+  font-family: sans-serif;
+  font-size: large;
+  font-weight: 400;
+}
+
+#copyRight {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  padding: auto;
+  gap: 30px;
+}
+#copyRightIcons {
+  display: inline-flex;
+  gap: 20px;
+}
+.copyRightSelected {
+  transition: all 0.5 ease-in-out;
+  cursor: pointer;
+}
+#FaFacebookSquare:hover {
+  color: #1877f2;
+}
+#FaInstagramSquare:hover {
+  color: rgb(251, 176, 52);
+}
+#FaTwitterSquare:hover {
+  color: #00acee;
+}
+#FaYoutubeSquare:hover {
+  color: #947373;
+}
+#AiFillTikTok:hover {
+  color: black;
+}

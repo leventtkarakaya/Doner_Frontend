@@ -5,7 +5,7 @@ import Link from "next/link";
 import style from "./Navbar.module.css";
 import Dropdown from "react-bootstrap/Dropdown";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import MenuBtn from "@/app/components/MenuBtn";
 export default function Navbar() {
   const [language, setLanguage] = useState(false);
 
@@ -489,6 +489,11 @@ export default function Navbar() {
               {/* Language end */}
             </ul>
           </div>
+          {/* MenuBtn */}
+          <div id={style.MenuBtn}>
+            <MenuBtn />
+          </div>
+          {/* MenuBtn */}
         </div>
       </div>
     </>
