@@ -84,7 +84,9 @@
 .containerAbout > .containerAbout_3 > .containerWrapper {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 100px;
+  width: 100%;
 }
 .containerAbout > .containerAbout_3 > .containerWrapper > ul > h3 {
   color: #ed1d24;
@@ -248,6 +250,8 @@
   .containerAbout_2 {
     width: 100%;
   }
+}
+@media only screen and (max-width: 980px) {
   .containerAbout > .containerAbout_3 {
     margin-top: 10px;
     padding: 0px;
@@ -256,26 +260,24 @@
     display: flex;
     justify-content: center;
     gap: 0px;
-    padding: 0px;
   }
-  .containerAbout > .containerAbout_3 {
-    width: 100%;
-  }
+
   .containerAbout > .containerAbout_3 > .containerWrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     margin-top: 20px;
-    padding: 0;
+    width: 100%;
+    gap: 5px;
+    padding: 5px;
   }
   #ulparagraf {
     color: #ed1d24;
     width: 100%;
   }
   #Youtube {
-    width: 700px;
-    height: 300px;
+    width: 300px;
+    height: 250px;
   }
   .containerAbout
     > .containerAbout_3
@@ -286,6 +288,14 @@
     align-items: center;
     gap: 5px;
     width: 50%;
+  }
+  .containerAbout
+    > .containerAbout_3
+    > .containerWrapper
+    > .containerWrapper_text
+    > p {
+    line-height: normal;
+    word-wrap: none;
   }
 }
 /* Media Querys */
