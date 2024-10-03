@@ -123,3 +123,43 @@
 #AiFillTikTok:hover {
   color: black;
 }
+
+/* Media Querys */
+
+@media only screen and (max-width: 480px) {
+  .container > .containerWrapper > .containerWrapperContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+  }
+  .container > .containerWrapper > .containerWrapperContent > ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    gap: 15px;
+    width: 100%;
+  }
+  .container > .containerWrapper .containerWrapperContent > .description {
+    width: 100%;
+  }
+  .container > .containerWrapper .containerWrapperContent > .mobileLinks {
+    width: 100%;
+  }
+  .container > .containerWrapper .containerWrapperContent > .locations {
+    width: 100%;
+  }
+  #copyRight {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: auto;
+    gap: 30px;
+  }
+}
+
+/* Media Querys */
