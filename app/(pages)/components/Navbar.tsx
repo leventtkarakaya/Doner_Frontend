@@ -66,7 +66,9 @@ export default function Navbar() {
                         gap: "10px",
                       }}
                     >
-                      <Dropdown.Item href="#">Hakkımızda</Dropdown.Item>
+                      <Dropdown.Item href="/hakkimizda">
+                        Hakkımızda
+                      </Dropdown.Item>
                       <Dropdown.Item href="#">Tarihçe</Dropdown.Item>
                       <Dropdown.Item href="#">
                         Vizyon ve Misyonlarımız

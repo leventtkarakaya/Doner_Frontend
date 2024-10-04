@@ -18,3 +18,17 @@
 .swiper-button-prev {
   color: #bf0d0d !important ;
 }
+
+.bg-custom {
+  background-color: #f7f7f7f7;
+}
+.polesanHover {
+  color: red;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.polesanHover:hover {
+  color: black;
+  text-decoration: underline;
+}
