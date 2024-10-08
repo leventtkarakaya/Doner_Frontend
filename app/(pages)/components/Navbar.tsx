@@ -69,11 +69,13 @@ export default function Navbar() {
                       <Dropdown.Item href="/hakkimizda">
                         Hakkımızda
                       </Dropdown.Item>
-                      <Dropdown.Item href="#">Tarihçe</Dropdown.Item>
-                      <Dropdown.Item href="#">
+                      <Dropdown.Item href="/tarihce">Tarihçe</Dropdown.Item>
+                      <Dropdown.Item href="/misyon-ve-vizyonumuz">
                         Vizyon ve Misyonlarımız
                       </Dropdown.Item>
-                      <Dropdown.Item href="#">İnsan Kaynakları</Dropdown.Item>
+                      <Dropdown.Item href="/insan-kaynaklari">
+                        İnsan Kaynakları
+                      </Dropdown.Item>
                       <Dropdown.Item href="#">360 Sanal Tur</Dropdown.Item>
                       <Dropdown.Item href="#">Belgeler</Dropdown.Item>
                     </div>

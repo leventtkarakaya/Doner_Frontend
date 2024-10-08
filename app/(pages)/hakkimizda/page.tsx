@@ -1,26 +1,30 @@
 import React from "react";
 import Image from "next/image";
+import style from "./hakkimizda.module.css";
 export default function page() {
   return (
     <>
       <div>
         {/* 1 */}
         <div className="d-flex flex-column align-items-center justify-content-center bg-custom p-4">
-          <h3 style={{ color: "red" }}>Hakkımızda</h3>
-          <span style={{ color: "red" }}>{`Anasayfa > Hakkımızda`}</span>
+          <i className="text-danger text-uppercase h3">Hakkımızda</i>
+          <span className="text-danger">{`Anasayfa > Hakkımızda`}</span>
         </div>
         {/* 2 */}
-        <div className="container mt-5 p-4">
-          <div className="d-flex gap-5">
+        <div className="container mt-5 p-5">
+          <div className="d-flex gap-5" id={style.hakkimizdaWrapper_2}>
             <Image
               src={"/images/hakkimizda/AboutImage.jpg"}
-              alt="Ağababa Döner"
+              id={style.hakkimizdaWrapperImage_2}
               width={400}
               height={400}
+              alt="Ağababa Döner"
             />
             <div>
               <p>
-                <strong className="text-bg-black fw-bold">Ağababa Döner</strong>
+                <strong className="text-bg-black fw-bold ">
+                  Ağababa Döner
+                </strong>
                 , odun ateşinde pişen, nefis yaprak dönerinin yanı sıra,
                 kebapları, ızgaraları, çorbaları, zeytinyağlıları, sulu ev
                 yemekleri, mezeleri, tatlıları ve tüm lezzetleriyle, geleneksel

@@ -32,3 +32,11 @@
   color: black;
   text-decoration: underline;
 }
+
+:root {
+  --text-red: #ed1d24;
+}
+
+.text-red {
+  color: var(--text-red);
+}

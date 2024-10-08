@@ -1,0 +1,21 @@
+#hakkimizdaWrapperImage_2 {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media only screen and (max-width: 480px) {
+  #hakkimizdaWrapper_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #hakkimizdaWrapperImage_2 {
+    width: 200;
+    height: 200;
+    object-fit: cover;
+    object-position: center;
+  }
+}
