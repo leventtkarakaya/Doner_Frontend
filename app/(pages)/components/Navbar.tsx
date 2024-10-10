@@ -76,8 +76,15 @@ export default function Navbar() {
                       <Dropdown.Item href="/insan-kaynaklari">
                         İnsan Kaynakları
                       </Dropdown.Item>
-                      <Dropdown.Item href="#">360 Sanal Tur</Dropdown.Item>
-                      <Dropdown.Item href="#">Belgeler</Dropdown.Item>
+                      <Dropdown.Item>
+                        <Link
+                          style={{ color: "#000000", textDecoration: "none" }}
+                          href="https://www.google.com/maps/place/A%C4%9Fababa+D%C3%B6ner+%26+Yemek+Restaurant/@41.0050866,29.1666174,3a,90y,20.65h,86.65t/data=!3m8!1e1!3m6!1sAF1QipNsgJ7ubpAiuGMTbM5Jyki6v38c_JRr6dimNXAK!2e10!3e11!6s%2F%2Flh5.ggpht.com%2Fp%2FAF1QipNsgJ7ubpAiuGMTbM5Jyki6v38c_JRr6dimNXAK%3Dw900-h600-k-no-pi3.3499999999999943-ya346.0500015258789-ro0-fo100!7i6720!8i3360!4m7!3m6!1s0x14cac8e30fa27887:0x60b2aa7004e50f2f!8m2!3d41.0052017!4d29.1667864!10e5!16s%2Fg%2F1thlq8w9?coh=205410&entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D"
+                        >
+                          360 Sanal Tur
+                        </Link>
+                      </Dropdown.Item>
+                      <Dropdown.Item href="/belgeler">Belgeler</Dropdown.Item>
                     </div>
                     <div
                       style={{
