@@ -94,14 +94,13 @@ export default function Navbar() {
                       }}
                     >
                       <Dropdown.Item
-                        href="#"
                         style={{
                           display: "flex",
                           flexDirection: "column",
-                          gap: "10px",
                           alignItems: "center",
                           justifyContent: "center",
                           width: "300px",
+                          gap: "10px",
                         }}
                       >
                         <h6>Sağlıklı Beslenme Önerileri</h6>
@@ -127,12 +126,12 @@ export default function Navbar() {
                         >
                           Vücudumuzda dakikada 10 milyon hücre ölürken, bir o
                           kadarı da yenileniyor.
-                          <a
-                            href="#"
+                          <Link
+                            href="/saglikli-beslenme-onerileri"
                             style={{ textDecoration: "none", color: "red" }}
                           >
-                            devamı»
-                          </a>
+                            <p>devamı»</p>
+                          </Link>
                         </p>
                       </Dropdown.Item>
                       <Dropdown.Item
@@ -213,7 +212,7 @@ export default function Navbar() {
                     }}
                   >
                     <Dropdown.Item
-                      href="#"
+                      href="/doner-cesitleri"
                       style={{ width: "300px", height: "200px" }}
                     >
                       <div>

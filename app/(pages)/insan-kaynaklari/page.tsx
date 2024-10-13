@@ -79,9 +79,9 @@ export default function page() {
                   maxLength={11}
                   value={value.tel ? value.tel : ""}
                   onChange={(e: any) => handleValueChangeTel(e)}
-                  autoComplete="off"
                   className="w-100 d-flex align-items-center gap-2 justify-content-between"
                   placeholder="Telefon"
+                  autoComplete="off"
                 />
               </div>
               <div className={styles.formsInput}>
